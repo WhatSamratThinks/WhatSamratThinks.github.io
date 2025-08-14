@@ -4,92 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samrat's Thoughts</title>
-
-  <!-- Godfather-style font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Elegant serif font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      font-family: 'Merriweather', serif;
+      background-color: #fdfdfd;
+      color: #111;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
       text-align: center;
-      background: #0b0c10;
-      color: #00ffff;
-      font-family: 'Cinzel', serif;
-      overflow: hidden;
     }
 
-    /* Tron-style animated grid lines */
-    .grid {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(0,255,255,0.1) 1px, transparent 1px), 
-                  linear-gradient(rgba(0,255,255,0.1) 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: moveGrid 10s linear infinite;
-      z-index: 0;
-    }
-
-    @keyframes moveGrid {
-      0% {background-position: 0 0, 0 0;}
-      100% {background-position: 100px 100px, 100px 100px;}
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
+    .container {
       max-width: 700px;
+      padding: 20px;
     }
 
     h1 {
+      font-family: 'Cinzel', serif;
       font-size: 3em;
       margin-bottom: 20px;
-      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+      color: #222;
     }
 
     p {
-      font-size: 1.5em;
-      line-height: 1.5;
+      font-size: 1.3em;
+      line-height: 1.7;
       margin-bottom: 30px;
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffff;
+      color: #333;
     }
 
     a {
       display: inline-block;
-      padding: 12px 30px;
-      background-color: rgba(0,255,255,0.2);
-      color: #00ffff;
+      padding: 12px 25px;
+      background-color: #222;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 25px;
-      font-size: 1.2em;
-      transition: 0.3s;
-      text-shadow: 0 0 5px #00ffff;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background 0.3s;
     }
 
     a:hover {
-      background-color: rgba(0,255,255,0.5);
-      text-shadow: 0 0 15px #00ffff;
+      background-color: #555;
     }
-
   </style>
 </head>
 <body>
-  <div class="grid"></div>
-  <div class="content">
+  <div class="container">
     <h1>Hi, Professor Samrat here!</h1>
     <p>I created this website to have some conversations and share my thoughts about certain things.</p>
     <a href="#">Read what Samrat thinks</a>
   </div>
 </body>
 </html>
-
 
